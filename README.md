@@ -27,7 +27,7 @@ https://github.com/ShuaiZhao418/GraduationProject_Bill_Management_System/tree/ma
 
 Hyperledger Fabric:   
 --    
-1. Install:   
+1. Install environment:   
 https://docs.google.com/document/d/1FLx96MnhnmEPMJanjwbzP7KDbtm0ni8CLakPIfb3-v8/edit.   
-2. Use:      
+2. Build a Fabric:      
 https://hyperledger-fabric.readthedocs.io/en/latest/network/network.html
