@@ -22,3 +22,12 @@ https://github.com/ShuaiZhao418/GraduationProject_Bill_Management_System/tree/ma
 Entity Relationship:   
 https://github.com/ShuaiZhao418/GraduationProject_Bill_Management_System/tree/main/Entity%20Relationship%20Diagram.    
 
+
+
+
+Hyperledger Fabric:   
+--    
+1. Install:   
+https://docs.google.com/document/d/1FLx96MnhnmEPMJanjwbzP7KDbtm0ni8CLakPIfb3-v8/edit.   
+2. Use:      
+https://hyperledger-fabric.readthedocs.io/en/latest/network/network.html
