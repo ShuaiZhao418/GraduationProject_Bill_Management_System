@@ -1,0 +1,610 @@
+{\rtf1\ansi\ansicpg936\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset134 STSongti-SC-Regular;\f1\froman\fcharset0 Times-Roman;\f2\froman\fcharset0 Times-Bold;
+\f3\fnil\fcharset134 STSongti-SC-Bold;\f4\fnil\fcharset134 PingFangSC-Regular;\f5\fswiss\fcharset0 ArialMT;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue233;\red60\green60\blue60;
+\red255\green255\blue255;\red2\green39\blue113;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c0\c0\c93333;\cssrgb\c30196\c30196\c30196;
+\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c21961\c51765;}
+\margl1440\margr1440\vieww19340\viewh12520\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\'a1\'be\'c1\'b4\'bd\'d3\'a1\'bf
+\f1 Hyperledgerfabric2.3
+\f0 \'bb\'f9\'b1\'be\'bb\'b7\'be\'b3\'b0\'b2\'d7\'b0
+\f1 -linux_
+\f0 \'ba\'ee\'ba\'ee\'ba\'ee\'cf\'c8
+\f1  \
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://blog.csdn.net/weixin_44142032/article/details/110230668"}}{\fldrslt \cf3 \ul \ulc3 https://blog.csdn.net/weixin_44142032/article/details/110230668}}\
+\
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://blog.csdn.net/qq_43681877/article/details/110896678?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.control&dist_request_id=&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.control"}}{\fldrslt \cf3 \ul \ulc3 https://blog.csdn.net/qq_43681877/article/details/110896678?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.control&dist_request_id=&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.control}}\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf2 \
+\pard\pardeftab720\sl630\partightenfactor0
+
+\f2\b\fs36 \cf2 1.
+\f3 \'b0\'b2\'d7\'b0\'bb\'f9\'b1\'be\'b9\'a4\'be\'df
+\f1\b0\fs28 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 yum install curl\
+\pard\pardeftab720\sl560\partightenfactor0
+
+\f2\b\fs32 \cf2 2.
+\f3 \'b0\'b2\'d7\'b0
+\f2 docker
+\f3 \'ba\'cd
+\f2 node
+\f1\b0\fs28 \
+\pard\pardeftab720\sl490\partightenfactor0
+\cf2 2.1 
+\f0 \'c8\'b7\'b1\'a3
+\f1 yum
+\f0 \'b0\'fc\'b8\'fc\'d0\'c2\'b5\'bd\'d7\'ee\'d0\'c2\'a3\'ba
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 yum update -y\
+\pard\pardeftab720\sl490\partightenfactor0
+
+\fs28 \cf2 2.2 
+\f0 \'b6\'d4\'b7\'fe\'ce\'f1\'c6\'f7\'bd\'f8\'d0\'d0\'c7\'e5\'c0\'ed\'a3\'ac
+\f1  
+\f0 \'c8\'e7\'b9\'fb\'d6\'ae\'c7\'b0\'b0\'b2\'d7\'b0\'b9\'fd
+\f1 Docker 
+\f0 \'a3\'ac
+\f1  
+\f0 \'d0\'e8\'d2\'aa\'cf\'c8\'d6\'b4\'d0\'d0\'d0\'b6\'d4\'d8\'b2\'d9\'d7\'f7\'a3\'ac\'be\'df\'cc\'e5\'c3\'fc\'c1\'ee
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 sudo yum remove docker docker-client docker-client-latest docker-common docker-latest docker-latest-logrotate docker-logrotate docker-selinux docker-engine-selinux docker-engine\
+\pard\pardeftab720\sl490\partightenfactor0
+
+\fs28 \cf2 2.3 
+\f0 \'b0\'b2\'d7\'b0\'d0\'e8\'d2\'aa\'b5\'c4\'c8\'ed\'bc\'fe\'b0\'fc\'a3\'ba
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 yum install -y yum-utils device-mapper-persistent-data lvm2\
+\pard\pardeftab720\sl490\partightenfactor0
+
+\fs28 \cf2 2.4
+\f0 \'cc\'ed\'bc\'d3
+\f1 docker yum 
+\f0 \'d4\'b4
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 sudo yum-config-manager --add-repo {\field{\*\fldinst{HYPERLINK "https://download.docker.com/linux/centos/docker-ce.repo"}}{\fldrslt \ul https://download.docker.com/linux/centos/docker-ce.repo}}\
+\pard\pardeftab720\sl490\partightenfactor0
+
+\fs28 \cf2 2.5
+\f0 \'b0\'b2\'d7\'b0
+\f1 docker\
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 yum install docker-ce -y\
+\pard\pardeftab720\sl490\partightenfactor0
+
+\fs28 \cf2 2.6
+\f0 \'b2\'e9\'bf\'b4
+\f1 docker
+\f0 \'b0\'e6\'b1\'be\'d0\'c5\'cf\'a2\'a3\'ac\'ca\'c7\'b7\'f1\'b0\'b2\'d7\'b0\'b3\'c9\'b9\'a6
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 docker --version\
+\pard\pardeftab720\sl490\partightenfactor0
+
+\fs28 \cf2 2.7 docker
+\f0 \'bb\'f9\'b1\'be\'c3\'fc\'c1\'ee
+\f1 \
+
+\f0 \'c6\'f4\'b6\'af
+\f1 docker
+\f0 \'a3\'ba
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 systemctl start docker\
+\pard\pardeftab720\sl490\partightenfactor0
+
+\f0\fs28 \cf2 \'cd\'a3\'d6\'b9
+\f1 docker
+\f0 \'a3\'ba
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 systemctl stop docker\
+\pard\pardeftab720\sl490\partightenfactor0
+
+\f0\fs28 \cf2 \'d6\'d8\'c6\'f4
+\f1 docker
+\f0 \'a3\'ba
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 systemctl restart docker.service\
+\pard\pardeftab720\sl490\partightenfactor0
+
+\f0\fs28 \cf2 \'b2\'e9\'bf\'b4
+\f1 docker
+\f0 \'d4\'cb\'d0\'d0\'d7\'b4\'cc\'ac\'a3\'ba
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 systemctl status docker.service\
+\pard\pardeftab720\sl630\partightenfactor0
+
+\f2\b\fs36 \cf2 3.
+\f3 \'b0\'b2\'d7\'b0
+\f2 docker-compose
+\f1\b0\fs28 \
+\pard\pardeftab720\sl490\partightenfactor0
+\cf2 Compose 
+\f0 \'ca\'c7\'b6\'a8\'d2\'e5\'ba\'cd\'d4\'cb\'d0\'d0\'b6\'e0\'c8\'dd\'c6\'f7
+\f1 Docker 
+\f0 \'d3\'a6\'d3\'c3\'b3\'cc\'d0\'f2\'b5\'c4\'b9\'a4\'be\'df\'a3\'ac\'bf\'c9\'d2\'d4\'ca\'b9\'d3\'c3
+\f1 YAML 
+\f0 \'ce\'c4\'bc\'fe\'c0\'b4\'c5\'e4\'d6\'c3\'d3\'a6\'d3\'c3\'b7\'fe\'ce\'f1\'a1\'a3\'c8\'bb\'ba\'f3\'a3\'ac
+\f1  
+\f0 \'cd\'a8\'b9\'fd\'b5\'a5\'b8\'f6\'c3\'fc\'c1\'ee\'bf\'c9\'d2\'d4\'b4\'d3\'c5\'e4\'d6\'c3\'d6\'d0\'b4\'b4\'bd\'a8\'be\'ae\'c6\'f4\'b6\'af\'cb\'f9\'d3\'d0\'b7\'fe\'ce\'f1\'a1\'a3
+\f1 \
+\pard\pardeftab720\sl560\partightenfactor0
+
+\f2\b\fs32 \cf2 3.1 
+\f3 \'b0\'b2\'d7\'b0
+\f2 Docker-Compose
+\f1\b0\fs28 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 curl -L {\field{\*\fldinst{HYPERLINK "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-%60uname"}}{\fldrslt \ul https://github.com/docker/compose/releases/download/1.23.2/docker-compose-`uname}} -s`-`uname -m` -o /usr/local/bin/docker-compose\
+\pard\pardeftab720\sl560\partightenfactor0
+
+\f2\b\fs32 \cf2 3.2 
+\f3 \'ca\'da\'c8\'a8
+\f1\b0\fs28 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 chmod +x /usr/local/bin/docker-compose\
+\pard\pardeftab720\sl560\partightenfactor0
+
+\f2\b\fs32 \cf2 3.3 
+\f3 \'d1\'e9\'d6\'a4\'ca\'c7\'b7\'f1\'b0\'b2\'d7\'b0\'b3\'c9\'b9\'a6\'a3\'ac\'b2\'e9\'bf\'b4\'b0\'e6\'b1\'be\'ba\'c5
+\f1\b0\fs28 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 docker-compose --version\
+\pard\pardeftab720\sl630\partightenfactor0
+
+\f2\b\fs36 \cf2 4.
+\f3 \'b0\'b2\'d7\'b0
+\f2 go
+\f3 \'bb\'b7\'be\'b3
+\f1\b0\fs28 \
+\pard\pardeftab720\sl490\partightenfactor0
+
+\f0 \cf2 \'ce\'aa\'c1\'cb\'ca\'ca\'d3\'a6
+\f1 fabric2.0
+\f0 \'a3\'ac\'d5\'e2\'c0\'ef\'b0\'b2\'d7\'b0\'b5\'c4\'d7\'ee\'d0\'c2\'b0\'e6\'b1\'be\'b5\'c4
+\f1 go\
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 wget {\field{\*\fldinst{HYPERLINK "https://dl.google.com/go/go1.15.10.linux-amd64.tar.gz"}}{\fldrslt \ul https://dl.google.com/go/go1.15.10.linux-amd64.tar.gz}}\
+\pard\pardeftab720\sl490\partightenfactor0
+
+\f0\fs28 \cf2 \'b0\'b2\'d7\'b0
+\f1 golang
+\f0 \'d3\'ef\'d1\'d4\'bb\'b7\'be\'b3\'a3\'ba
+\f1 \
+
+\f0 \'bd\'ab\'cf\'c2\'d4\'d8\'b5\'c4\'b6\'fe\'bd\'f8\'d6\'c6\'b0\'fc\'bd\'e2\'d1\'b9\'d6\'c1
+\f1  /opt/app/
+\f0 \'c4\'bf\'c2\'bc
+\f1 \
+
+\f0 \'d2\'c0\'b4\'ce\'d6\'b4\'d0\'d0\'c8\'e7\'cf\'c2\'c3\'fc\'c1\'ee
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 cd /opt\'a0\
+mkdir app\'a0\
+cd app\'a0\
+tar -C /opt/app/ -zxvf go1.15.10.linux-amd64.tar.gz\
+\pard\pardeftab720\sl490\partightenfactor0
+
+\f0\fs28 \cf2 \'b4\'b4\'bd\'a8
+\f1 GOPATH
+\f0 \'c4\'bf\'c2\'bc
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 cd /opt\
+\pard\pardeftab720\sl490\partightenfactor0
+
+\f0\fs28 \cf2 \'b4\'b4\'bd\'a8\'ce\'c4\'bc\'fe\'bc\'d0
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 mkdir goWork\
+\pard\pardeftab720\sl490\partightenfactor0
+
+\f0\fs28 \cf2 \'bd\'ab
+\f1 /opt/app/go/bin
+\f0 \'c4\'bf\'c2\'bc\'cc\'ed\'bc\'d3\'d6\'c1
+\f1 PATH
+\f0 \'bb\'b7\'be\'b3\'b1\'e4\'c1\'bf
+\f1 \
+
+\f0 \'d4\'da
+\f1 /etc/profile
+\f0 \'ce\'c4\'bc\'fe\'ce\'b2\'b2\'bf\'cc\'ed\'bc\'d3\'a3\'ba
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 vi /etc/profile\'a0\
+export GOROOT=/opt/app/go\'a0\
+export GOBIN=$GOROOT/bin\'a0\
+export PATH=$PATH:$GOBIN\'a0\
+export GOPATH=/opt/goWork\'a0\
+:wq\
+\pard\pardeftab720\sl490\partightenfactor0
+
+\f0\fs28 \cf2 \'b1\'a3\'b4\'e6\'ca\'b9\'c6\'e4\'c9\'fa\'d0\'a7
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 source /etc/profile\
+\pard\pardeftab720\sl490\partightenfactor0
+
+\f0\fs28 \cf2 \'b2\'e9\'bf\'b4\'c5\'e4\'d6\'c3\'ca\'c7\'b7\'f1\'b3\'c9\'b9\'a6\'a3\'ba
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 go version\
+\pard\pardeftab720\sl630\partightenfactor0
+
+\f2\b\fs36 \cf2 5.
+\f3 \'b0\'b2\'d7\'b0
+\f2 python
+\f3 \'bb\'b7\'be\'b3\'a3\'ba
+\f1\b0\fs28 \
+\pard\pardeftab720\sl490\partightenfactor0
+
+\f0 \cf2 \'ca\'b9\'d3\'c3\'d2\'d4\'cf\'c2\'c3\'fc\'c1\'ee\'bc\'ec\'b2\'e9
+\f1 python 
+\f0 \'b0\'e6\'b1\'be
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 python --version\
+\pard\pardeftab720\sl490\partightenfactor0
+
+\fs28 \cf2 centos7.5
+\f0 \'c4\'ac\'c8\'cf\'d2\'d1\'be\'ad\'b0\'b2\'d7\'b0\'c1\'cb
+\f1 Python 2.7.5\
+fabric node.js 
+\f0 \'d0\'e8\'d2\'aa\'d3\'c3
+\f1 python 2.7
+\f0 \'b2\'c5\'bf\'c9\'d2\'d4\'a3\'ac\'c8\'e7\'b9\'fb\'ce\'aa
+\f1 Python 3.5.1
+\f0 \'a3\'ac\'d0\'e8\'d2\'aa\'cd\'cb\'bb\'d8\'b5\'bd
+\f1 Python 2.7
+\f0 \'a1\'a3
+\f1 \
+\pard\pardeftab720\sl630\partightenfactor0
+
+\f2\b\fs36 \cf2 6.
+\f3 \'b0\'b2\'d7\'b0
+\f2 Node.js Runtime and NPM
+\f1\b0\fs28 \
+\pard\pardeftab720\sl490\partightenfactor0
+\cf2 fabric
+\f0 \'c4\'bf\'c7\'b0\'b2\'bb\'d6\'a7\'b3\'d6
+\f1 8.x
+\f0 \'cf\'b5\'c1\'d0\'d2\'d4\'cd\'e2\'b5\'c4\'c6\'e4\'cb\'fb\'b0\'e6\'b1\'be
+\f1 \
+Node.js - version 8.x\
+
+\f0 \'b2\'e9\'bf\'b4\'b0\'e6\'b1\'be\'c3\'fc\'c1\'ee\'a3\'ba
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 node -v\
+\pard\pardeftab720\sl490\partightenfactor0
+
+\fs28 \cf2 6.1
+\f0 \'a3\'ba\'d6\'b1\'bd\'d3\'ca\'b9\'d3\'c3\'d2\'d1\'b1\'e0\'d2\'eb\'ba\'c3\'b5\'c4\'b0\'fc\'bd\'f8\'d0\'d0\'b0\'b2\'d7\'b0
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 cd /opt/app\'a0\
+mkdir nodejs\'a0\
+cd nodejs\'a0\
+wget {\field{\*\fldinst{HYPERLINK "https://npm.taobao.org/mirrors/node/v14.16.0/node-v14.16.0-linux-x64.tar.xz"}}{\fldrslt \ul https://npm.taobao.org/mirrors/node/v14.16.0/node-v14.16.0-linux-x64.tar.xz}}\'a0\
+tar xf node-v14.16.0-linux-x64.tar.xz\'a0\
+cd node-v14.16.0-linux-x64\'a0\
+./bin/node -v // 
+\f0 \'d6\'b4\'d0\'d0
+\f1 node
+\f0 \'c3\'fc\'c1\'ee
+\f1  
+\f0 \'b2\'e9\'bf\'b4\'b0\'e6\'b1\'be
+\f1 \
+\pard\pardeftab720\sl490\partightenfactor0
+
+\fs28 \cf2 v14.16.0\
+
+\f0 \'bd\'e2\'d1\'b9\'ce\'c4\'bc\'fe\'b5\'c4
+\f1  bin 
+\f0 \'c4\'bf\'c2\'bc\'b5\'d7\'cf\'c2\'b0\'fc\'ba\'ac\'c1\'cb
+\f1  node
+\f0 \'a1\'a2
+\f1 npm 
+\f0 \'b5\'c8\'c3\'fc\'c1\'ee\'a3\'ac\'bf\'c9\'d2\'d4\'ca\'b9\'d3\'c3
+\f1  ln 
+\f0 \'c3\'fc\'c1\'ee\'c0\'b4\'c9\'e8\'d6\'c3\'c8\'ed\'c1\'ac\'bd\'d3\'a3\'ba
+\f1 \
+ln -s 
+\f0 \'d4\'b4\'ce\'c4\'bc\'fe\'c3\'fb
+\f1  
+\f0 \'c4\'bf\'b1\'ea\'ce\'c4\'bc\'fe\'c3\'fb
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 ln -s /opt/app/nodejs/node-v14.16.0-linux-x64/bin/npm /usr/local/bin/\'a0\
+ln -s /opt/app/nodejs/node-v14.16.0-linux-x64/bin/node /usr/local/bin/\
+\pard\pardeftab720\sl490\partightenfactor0
+
+\fs28 \cf2 6.2
+\f0 \'a3\'ba\'b2\'e9\'bf\'b4
+\f1 node 
+\f0 \'ba\'cd
+\f1  npm
+\f0 \'b0\'e6\'b1\'be\'d0\'c5\'cf\'a2
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 node -v npm -v\
+\pard\pardeftab720\sl490\partightenfactor0
+
+\fs28 \cf2 6.3
+\f0 \'a3\'ba\'b0\'b2\'d7\'b0
+\f1 taobao
+\f0 \'be\'b5\'cf\'f1
+\f1 \
+npm
+\f0 \'cc\'ab\'c2\'fd\'a3\'ac\'d3\'c3\'cc\'d4\'b1\'a6\'be\'b5\'cf\'f1\'b4\'fa\'cc\'e6
+\f1 npm
+\f0 \'b9\'d9\'b7\'bd\'be\'b5\'cf\'f1
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 npm config set registry {\field{\*\fldinst{HYPERLINK "https://registry.npm.taobao.org/"}}{\fldrslt \ul https://registry.npm.taobao.org}}\
+\pard\pardeftab720\sl490\partightenfactor0
+
+\f0\fs28 \cf2 \'c5\'e4\'d6\'c3\'ba\'f3\'bf\'c9\'cd\'a8\'b9\'fd\'cf\'c2\'c3\'e6\'b7\'bd\'ca\'bd\'c0\'b4\'d1\'e9\'d6\'a4\'ca\'c7\'b7\'f1\'b3\'c9\'b9\'a6
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 npm config get registry\
+\pard\pardeftab720\sl490\partightenfactor0
+
+\f0\fs28 \cf2 \'ca\'e4\'b3\'f6\'a3\'ba
+\f1 \
+\pard\pardeftab720\sl490\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://registry.npm.taobao.org/"}}{\fldrslt \cf2 \ul \ulc2 https://registry.npm.taobao.org/}}\
+6.4
+\f0 \'a3\'ba\'b0\'b2\'d7\'b0
+\f1 express module
+\f0 \'b2\'e2\'ca\'d4
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 npm install express -g\
+\pard\pardeftab720\sl490\partightenfactor0
+
+\fs28 \cf2 # -g
+\f0 \'ca\'c7\'c8\'ab\'be\'d6\'b0\'b2\'d7\'b0\'b5\'c4\'d2\'e2\'cb\'bc
+\f1 \
+
+\f0 \'ca\'e4\'b3\'f6\'a3\'ba
+\f1 \
+express@4.16.4\
+added 48 packages in 4.78s\
+
+\f0 \'bf\'c9\'d2\'d4\'d4\'da\'cf\'c2\'c3\'e6\'c4\'bf\'c2\'bc\'bf\'b4\'b5\'bd\'cf\'c2\'d4\'d8\'b5\'c4
+\f1 express
+\f0 \'a3\'ba
+\f1 \
+/opt/app/nodejs/node-v8.9.4-linux-x64/lib/node_modules/express\
+\pard\pardeftab720\sl700\partightenfactor0
+
+\f3\b\fs40 \cf2 \'b6\'fe\'a1\'a2\'bb\'f1\'c8\'a1
+\f2 fabric
+\f3 \'d4\'b4\'c2\'eb\'a3\'ac\'b6\'fe\'bd\'f8\'d6\'c6\'ce\'c4\'bc\'fe\'d2\'d4\'bc\'b0
+\f2 fabric-samples
+\f1\b0\fs28 \
+\pard\pardeftab720\sl490\partightenfactor0
+
+\f0 \cf2 \'d4\'da
+\f1 go/src/{\field{\*\fldinst{HYPERLINK "http://github.com/"}}{\fldrslt \cf3 \ul \ulc3 github.com/}}
+\f0 \'ce\'c4\'bc\'fe\'bc\'d0\'cf\'c2\'bf\'cb\'c2\'a1\'d4\'b4\'c2\'eb\'a3\'a8\'ca\'b9\'d3\'c3
+\f1 gitee
+\f0 \'a3\'a9
+\f1 \
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://gitee.com/mirrors/hyperledger-fabric.git"}}{\fldrslt 
+\fs24 \cf2 \ul \ulc2 https://gitee.com/mirrors/hyperledger-fabric.git}}
+\fs24 \
+\pard\pardeftab720\sl490\partightenfactor0
+
+\f0\fs28 \cf2 \'bd\'f8\'c8\'eb
+\f1 hyperledge-fabric
+\f0 \'c4\'bf\'c2\'bc
+\f1 \
+
+\f0 \'b2\'e9\'bf\'b4\'b0\'e6\'b1\'be
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 cd ./hyperledger-fabric\'a0\
+git init\'a0\
+git branch -a\
+\pard\pardeftab720\sl490\partightenfactor0
+
+\f0\fs28 \cf2 \'d1\'a1\'d4\'f1
+\f1 release-2.2\
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 git checkout release-2.2\
+\pard\pardeftab720\sl560\partightenfactor0
+
+\f4\fs32 \cf4 \cb5 \'bd\'f8\'c8\'eb
+\f5 scripts
+\f4 \'ce\'c4\'bc\'fe\'bc\'d0
+\f1\fs28 \cf2 \cb1 \
+
+\f5\fs32 \cf4 \cb5 2
+\f4 \'a1\'a2\'b1\'e0\'bc\'ad
+\f5 bootstrap.sh
+\f4 \'ce\'c4\'bc\'fe\'a3\'ac\'bc\'d3\'bf\'ec\'cf\'c2\'d4\'d8\'cb\'d9\'b6\'c8\'a3\'ac\'d7\'a2\'d2\'e2\'b0\'e6\'b1\'be\'a3\'ac\'ba\'f3\'c3\'e6\'d0\'e8\'d2\'aa
+\f1\fs28 \cf2 \cb1 \
+
+\f4\fs32 \cf4 \cb5 \'bd\'ab
+\f5 fabric-samples
+\f4 \'cf\'c2\'d4\'d8\'b5\'d8\'d6\'b7\'b8\'c4\'ce\'aa
+\f5 gitee
+\f4 \'b5\'c4\'cf\'c2\'d4\'d8\'b5\'d8\'d6\'b7
+\f1\fs28 \cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://gitee.com/mirrors/hyperledger-fabric.git"}}{\fldrslt 
+\fs24 \cf2 \ul \ulc2 https://gitee.com/mirrors/hyperledger-fabric.git}}
+\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf2 {{\NeXTGraphic 未知.png \width18560 \height11340 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}�}\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl490\partightenfactor0
+
+\f0 \cf2 \'cc\'f8\'b9\'fd\'b6\'fe\'bd\'f8\'d6\'c6\'a1\'a2\'c5\'e4\'d6\'c3\'ce\'c4\'bc\'fe\'a1\'a2\'be\'b5\'cf\'f1\'b5\'c4\'cf\'c2\'d4\'d8\'a3\'ac\'ba\'f3\'c3\'e6\'cd\'a8\'b9\'fd\'d1\'b9\'cb\'f5\'b0\'fc\'c9\'cf\'b4\'ab
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 ./bootstrap.sh -db\
+\pard\pardeftab720\sl560\partightenfactor0
+
+\f4\fs32 \cf4 \cb5 \'cf\'c2\'d4\'d8\'cd\'ea\'b3\'c9\'bb\'e1\'bf\'b4\'b5\'bd\'d2\'bb\'b8\'f6
+\f5 fabric-samples
+\f4 \'ce\'c4\'bc\'fe\'bc\'d0\'a3\'ac\'b4\'cb\'ca\'b1\'d4\'da\'cd\'f8\'c9\'cf\'cf\'c2\'d4\'d8\'b6\'fe\'bd\'f8\'d6\'c6\'ce\'c4\'bc\'fe\'ba\'cd\'c5\'e4\'d6\'c3\'ce\'c4\'bc\'fe
+\f5 3
+\f4 \'a1\'a2\'b2\'e9\'bf\'b4
+\f5 bootstrap.sh
+\f4 \'ce\'c4\'bc\'fe\'d2\'aa\'c7\'f3\'b5\'c4\'b0\'e6\'b1\'be\'d0\'c5\'cf\'a2
+\f1\fs28 \cf2 \cb1 \
+\pard\pardeftab720\sl560\partightenfactor0
+
+\f5\fs32 \cf4 fabric2.2 
+\f4 \'b5\'c4
+\f5 fabric-ca
+\f4 \'b0\'e6\'b1\'be\'a3\'ba
+\f5  v1.49{\field{\*\fldinst{HYPERLINK "https://github.com/hyperledger/fabric-ca/releases"}}{\fldrslt 
+\f1\fs28 \cf6 \ul \ulc6 https://github.com/hyperledger/fabric-ca/releases}}
+\f1\fs28 \cf2 \
+\pard\pardeftab720\partightenfactor0
+\cf2 {{\NeXTGraphic 1__#$!@%!#__未知.png \width4400 \height1100 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}�}\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl560\partightenfactor0
+
+\f5\fs32 \cf4 \cb5 fabric2.2 
+\f4 \'b5\'c4
+\f5 fabric
+\f4 \'b6\'fe\'bd\'f8\'d6\'c6\'b0\'e6\'b1\'be\'a3\'ba
+\f5  v2.2.2{\field{\*\fldinst{HYPERLINK "https://github.com/hyperledger/fabric/releases"}}{\fldrslt 
+\f1\fs28 \cf6 \cb1 \ul \ulc6 https://github.com/hyperledger/fabric/releases}}
+\f1\fs28 \cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 {{\NeXTGraphic 2__#$!@%!#__未知.png \width4400 \height1100 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}�}\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl490\partightenfactor0
+
+\f0 \cf2 \'d3\'d2\'bc\'fc\'b8\'b4\'d6\'c6\'cf\'c2\'d4\'d8\'b5\'d8\'d6\'b7\'b5\'bd\'c9\'cf\'c3\'e6\'cc\'e1\'b5\'bd\'b5\'c4\'cd\'f8\'d5\'be\'bd\'f8\'d0\'d0\'cf\'c2\'d4\'d8\'d1\'b9\'cb\'f5\'b0\'fc
+\f1 4
+\f0 \'a1\'a2\'bd\'ab\'c1\'bd\'b8\'f6\'d1\'b9\'cb\'f5\'b0\'fc\'b4\'ab\'c8\'eb
+\f1 centos
+\f0 \'a3\'ac\'b7\'c5\'b5\'bd
+\f1 fabric-samples
+\f0 \'bd\'f8\'d0\'d0\'bd\'e2\'d1\'b9
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 tar vxzf 
+\f0 \'d1\'b9\'cb\'f5\'b0\'fc\'c3\'fb\'b3\'c6
+\f1 \
+\pard\pardeftab720\sl560\partightenfactor0
+
+\f4\fs32 \cf4 \cb5 \'bd\'e2\'d1\'b9\'ba\'f3\'bb\'e1\'d7\'d4\'b6\'af\'c9\'fa\'b3\'c9
+\f5 bin
+\f4 \'ce\'c4\'bc\'fe\'bc\'d0\'a3\'ac
+\f5 config
+\f4 \'ce\'c4\'bc\'fe\'bc\'d0
+\f1\fs28 \cf2 \cb1 \
+\pard\pardeftab720\sl490\partightenfactor0
+\cf2 5
+\f0 \'a1\'a2\'b1\'e0\'bc\'ad\'bb\'b7\'be\'b3\'b1\'e4\'c1\'bf\'a3\'ac\'cb\'e6\'ca\'b1\'cb\'e6\'b5\'d8\'bf\'c9\'d2\'d4\'ca\'b9\'d3\'c3\'d5\'e2\'d0\'a9\'ce\'c4\'bc\'fe
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 vim /etc/profile\
+\pard\pardeftab720\sl490\partightenfactor0
+
+\f0\fs28 \cf2 \'d4\'da\'ce\'c4\'bc\'fe\'c4\'a9\'ce\'b2\'bc\'d3\'c8\'eb\'d5\'e2\'c1\'bd\'d0\'d0\'b4\'fa\'c2\'eb\'a3\'ac\'a3\'a8
+\f1 $PATH:
+\f0 \'ba\'f3\'c3\'e6\'b5\'c4\'c2\'b7\'be\'b6\'ce\'aa\'d7\'d4\'bc\'ba\'b5\'c4\'ca\'b5\'bc\'ca\'bd\'e2\'d1\'b9\'c2\'b7\'be\'b6\'a3\'a9
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 export PATH=$PATH:/opt/goWork/src/{\field{\*\fldinst{HYPERLINK "http://github.com/hyperledger-fabric/scripts/fabric-samples/bin"}}{\fldrslt \cf3 \ul \ulc3 github.com/hyperledger-fabric/scripts/fabric-samples/bin}}\'a0\
+export PATH=$PATH:/opt/goWork/src/{\field{\*\fldinst{HYPERLINK "http://github.com/hyperledger-fabric/scripts/fabric-samples/config"}}{\fldrslt \cf3 \ul \ulc3 github.com/hyperledger-fabric/scripts/fabric-samples/config}}\
+source /etc/profile\
+\pard\pardeftab720\sl700\partightenfactor0
+
+\f3\b\fs40 \cf2 \'c8\'fd\'a1\'a2\'bb\'f1\'c8\'a1
+\f2 docker
+\f3 \'be\'b5\'cf\'f1
+\f1\b0\fs28 \
+\pard\pardeftab720\sl490\partightenfactor0
+\cf2 1
+\f0 \'a1\'a2\'cf\'c2\'d4\'d8
+\f1 docker
+\f0 \'ce\'c4\'bc\'fe\'bb\'d8\'b5\'bd
+\f1 scripts
+\f0 \'ce\'c4\'bc\'fe\'bc\'d0
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 ./bootstrap.sh -sb\
+\pard\pardeftab720\sl700\partightenfactor0
+
+\f3\b\fs40 \cf2 \'cb\'c4\'a1\'a2\'bf\'aa\'c6\'f4\'b2\'e2\'ca\'d4\'cd\'f8\'c2\'e7
+\f1\b0\fs28 \
+\pard\pardeftab720\sl490\partightenfactor0
+\cf2 1
+\f0 \'a1\'a2\'bd\'f8\'c8\'eb\'c8\'e7\'cf\'c2\'c2\'b7\'be\'b6\'b5\'c4
+\f1 test-network
+\f0 \'b0\'b8\'c0\'fd\'d6\'d0\'a3\'ac\'c6\'f4\'b6\'af\'b2\'e2\'ca\'d4\'cd\'f8\'c2\'e7
+\f1 \
+./network.sh up\
+\
+}

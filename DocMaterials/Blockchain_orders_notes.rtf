@@ -1,0 +1,287 @@
+{\rtf1\ansi\ansicpg936\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset134 PingFangSC-Regular;\f1\froman\fcharset0 Times-Roman;\f2\fnil\fcharset134 STSongti-SC-Regular;
+\f3\fnil\fcharset0 Menlo-Regular;\f4\fnil\fcharset0 AndaleMono;\f5\fnil\fcharset0 Menlo-Bold;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red241\green241\blue241;\red0\green0\blue233;
+\red29\green29\blue29;\red49\green49\blue49;\red38\green38\blue38;\red155\green162\blue177;\red30\green33\blue39;
+\red85\green138\blue3;\red81\green156\blue233;\red19\green84\blue164;\red255\green251\blue149;\red7\green7\blue8;
+\red46\green46\blue46;\red161\green94\blue10;\red247\green247\blue247;\red32\green33\blue38;\red113\green67\blue7;
+\red125\green124\blue112;\red4\green24\blue31;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c95686\c95686\c95686;\cssrgb\c0\c0\c93333;
+\cssrgb\c14902\c14902\c14902;\cssrgb\c25098\c25098\c25098;\cssrgb\c20000\c20000\c20000;\cssrgb\c67059\c69804\c74902;\cssrgb\c15686\c17255\c20392;
+\cssrgb\c40000\c60000\c0;\cssrgb\c38039\c68235\c93333;\cssrgb\c7451\c41569\c70196;\cssrgb\c100000\c98039\c64706;\cssrgb\c2353\c2353\c2745;
+\cssrgb\c23529\c23529\c23529;\cssrgb\c69804\c44314\c2353;\cssrgb\c97647\c97647\c97647;\cssrgb\c16471\c17255\c20000;\cssrgb\c52157\c33333\c1569;
+\cssrgb\c56471\c55686\c51373;\cssrgb\c784\c12549\c16078;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs32 \cf2 \expnd0\expndtw0\kerning0
+\'cc\'ed\'bc\'d3\'b4\'fa\'c0\'ed
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs28 \cf2 \cb3 go env -w GO111MODULE=on
+\f1\fs24 \cb1 \
+
+\f2\fs28 \cb3 go env -w GOPROXY={\field{\*\fldinst{HYPERLINK "https://goproxy.cn,direct/"}}{\fldrslt \cf4 \ul \ulc4 https://goproxy.cn,direct}}
+\f1\fs24 \cb1 \
+\
+Vue: 
+\f3\fs22 /opt/goWork/src/vue
+\f1\fs24  \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs32 \cf2 Fabric-sample:/opt/goWork/src/{\field{\*\fldinst{HYPERLINK "http://github.com/hyperledger-fabric/scripts/fabric-samples/"}}{\fldrslt \cf4 \ul \ulc4 github.com/hyperledger-fabric/scripts/fabric-samples/}}
+\f1\fs24 \
+\
+
+\f2 \'bd\'f8\'c8\'eb\'ca\'fd\'be\'dd\'bf\'e2
+\f1  \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs32 \cf2 ./network.sh down
+\f1\fs24 \
+
+\f3\fs32 ./network.sh up createChannel
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\fs32 \cf5 docker
+\f1\fs24 \cf2  
+\f4\fs32 \cf5 ps
+\f1\fs24 \cf2  \
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs32 \cf2 GO111MODULE=on go mod vendor
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf6 ./\cf7 network\cf6 .\cf7 sh
+\f1 \cf2  
+\f4 \cf7 deployCC
+\f1 \cf2  
+\f4 \cf6 -\cf7 ccn
+\f1 \cf2  
+\f4 \cf7 basic
+\f1 \cf2  
+\f4 \cf6 -\cf7 ccp
+\f1 \cf2  
+\f4 \cf6 ../\cf7 asset\cf6 -\cf7 transfer\cf6 -\cf7 basic\cf6 /\cf7 chaincode\cf6 -\cf7 go
+\f1 \cf2  
+\f4 \cf6 -\cf7 ccl
+\f1 \cf2  
+\f4 \cf7 go
+\f1 \cf2  \
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf2 \
+
+\f2 \'d6\'d8\'c6\'f4
+\f1 nginx
+\fs24 \
+
+\fs32 /usr/local/nginx/sbin/nginx -s reload
+\fs24 \
+
+\f2\fs32 \'b2\'e9\'bf\'b4
+\f1 nginx
+\f2 \'d4\'cb\'d0\'d0\'d7\'b4\'cc\'ac
+\f1\fs24 \
+
+\fs32 ps -ef | grep nginx
+\fs24 \
+
+\f2\fs32 \'b9\'d8\'b1\'d5\'b7\'c0\'bb\'f0\'c7\'bd
+\f1\fs24 \
+
+\fs32 systemctl stop firewalld.service
+\fs24 \
+
+\f2\fs32 \'b2\'e9\'d1\'af\'d5\'bc\'d3\'c3\'b6\'cb\'bf\'da
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs28 \cf8 \cb9 sudo lsof
+\f1\fs24 \cf2 \cb1  
+\f3\fs28 \cf10 \cb9 -\cf8 i :1087
+\f1\fs24 \cf2 \cb1  \
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs28 \cf11 \cb9 sudo kill
+\f1\fs24 \cf12 \cb13 \'a0
+\f3\fs28 \cf10 \cb9 -\cf8 9 pid
+\f1\fs24 \cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs28 \cf14 \'d0\'de\'b8\'c4\'d3\'f2\'c3\'fb
+\f1\fs24 \cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs22 \cf2 vi /etc/hosts
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf2 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs32 \cf2 Docker\'b2\'d9\'d7\'f7\'c3\'fc\'c1\'ee\'a3\'ba
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs32 \cf15 docker\'c6\'f4\'b6\'af\'c3\'fc\'c1\'ee\uc0\u160 sudo systemctl start docker
+\f1\fs24 \cf2 \
+
+\f0\fs32 \cf15 \'ca\'d8\'bb\'a4\'bd\'f8\'b3\'cc\'d6\'d8\'c6\'f4 sudo systemctl daemon-reload
+\f1\fs24 \cf2 \
+
+\f0\fs32 \cf15 \'d6\'d8\'c6\'f4docker\'b7\'fe\'ce\'f1 sudo systemctl restart docker
+\f1\fs24 \cf2 \
+
+\f0\fs32 \cf15 \'b9\'d8\'b1\'d5docker\uc0\u160 \u160 sudo systemctl stop docker
+\f1\fs24 \cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf2 \'c2\'b7\'be\'b6\'c5\'e4\'d6\'c3\'a3\'ba
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs28 \cf16 \cb17 export
+\f1\fs24 \cf2 \cb1  
+\f3\fs28 \cf18 \cb17 PATH=\cf19 $\{PWD\}\cf18 /../bin:\cf19 $\{PWD\}\cf18 :\cf19 $PATH
+\f1\fs24 \cf2 \cb1  \
+
+\f3\fs28 \cf16 \cb17 export
+\f1\fs24 \cf2 \cb1  
+\f3\fs28 \cf18 \cb17 FABRIC_CFG_PATH=\cf19 $PWD\cf18 /../config/
+\f1\fs24 \cf2 \cb1  \
+\pard\pardeftab720\partightenfactor0
+
+\f5\b\fs32 \cf20 \cb21 export
+\f1\b0\fs24 \cf2 \cb1  
+\f3\fs32 \cf20 \cb21 CORE_PEER_TLS_ENABLED=true
+\f1\fs24 \cf2 \cb1  \
+
+\f5\b\fs32 \cf20 \cb21 export
+\f1\b0\fs24 \cf2 \cb1  
+\f3\fs32 \cf20 \cb21 ORDERER_CA=$\{PWD\}/organizations/ordererOrganizations/{\field{\*\fldinst{HYPERLINK "http://example.com/orderers/orderer"}}{\fldrslt \cf4 \ul \ulc4 example.com/orderers/orderer}}.{\field{\*\fldinst{HYPERLINK "http://example.com/msp/tlscacerts/tlsca.example.com-cert.pem"}}{\fldrslt \cf4 \ul \ulc4 example.com/msp/tlscacerts/tlsca.example.com-cert.pem}}
+\f1\fs24 \cf2 \cb1  \
+
+\f5\b\fs32 \cf20 \cb21 export
+\f1\b0\fs24 \cf2 \cb1  
+\f3\fs32 \cf20 \cb21 PEER0_ORG1_CA=$\{PWD\}/organizations/peerOrganizations/org1.{\field{\*\fldinst{HYPERLINK "http://example.com/peers/peer0.org1.example.com/tls/ca.crt"}}{\fldrslt \cf4 \ul \ulc4 example.com/peers/peer0.org1.example.com/tls/ca.crt}}
+\f1\fs24 \cf2 \cb1  \
+
+\f5\b\fs32 \cf20 \cb21 export
+\f1\b0\fs24 \cf2 \cb1  
+\f3\fs32 \cf20 \cb21 PEER0_ORG2_CA=$\{PWD\}/organizations/peerOrganizations/org2.{\field{\*\fldinst{HYPERLINK "http://example.com/peers/peer0.org2.example.com/tls/ca.crt"}}{\fldrslt \cf4 \ul \ulc4 example.com/peers/peer0.org2.example.com/tls/ca.crt}}
+\f1\fs24 \cf2 \cb1  \
+
+\f5\b\fs32 \cf20 \cb21 export
+\f1\b0\fs24 \cf2 \cb1  
+\f3\fs32 \cf20 \cb21 PEER0_ORG3_CA=$\{PWD\}/organizations/peerOrganizations/org3.{\field{\*\fldinst{HYPERLINK "http://example.com/peers/peer0.org3.example.com/tls/ca.crt"}}{\fldrslt \cf4 \ul \ulc4 example.com/peers/peer0.org3.example.com/tls/ca.crt}}
+\f1\fs24 \cf2 \cb1  \
+
+\f5\b\fs32 \cf20 \cb21 export
+\f1\b0\fs24 \cf2 \cb1  
+\f3\fs32 \cf20 \cb21 CORE_PEER_LOCALMSPID="Org1MSP"
+\f1\fs24 \cf2 \cb1  \
+
+\f5\b\fs32 \cf20 \cb21 export
+\f1\b0\fs24 \cf2 \cb1  
+\f3\fs32 \cf20 \cb21 CORE_PEER_TLS_ROOTCERT_FILE=$PEER0_ORG1_CA
+\f1\fs24 \cf2 \cb1  \
+
+\f5\b\fs32 \cf20 \cb21 export
+\f1\b0\fs24 \cf2 \cb1  
+\f3\fs32 \cf20 \cb21 CORE_PEER_MSPCONFIGPATH=$\{PWD\}/organizations/peerOrganizations/org1.{\field{\*\fldinst{HYPERLINK "http://example.com/users/Admin@org1.example.com/msp"}}{\fldrslt \cf4 \ul \ulc4 example.com/users/Admin@org1.example.com/msp}}
+\f1\fs24 \cf2 \cb1  \
+
+\f5\b\fs32 \cf20 \cb21 export
+\f1\b0\fs24 \cf2 \cb1  
+\f3\fs32 \cf20 \cb21 CORE_PEER_ADDRESS=localhost:7051
+\f1\fs24 \cf2 \cb1  \
+
+\f5\b\fs32 \cf20 \cb21 export
+\f1\b0\fs24 \cf2 \cb1  
+\f3\fs32 \cf20 \cb21 CORE_PEER_ADDRESS=peer0.{\field{\*\fldinst{HYPERLINK "http://org1.example.com:7051/"}}{\fldrslt \cf4 \ul \ulc4 org1.example.com:7051}}
+\f1\fs24 \cf2 \cb1  \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs28 \cf2 peer lifecycle chaincode package basic.tar.gz --path /opt/goWork/src/{\field{\*\fldinst{HYPERLINK "http://github.com/hyperledger-fabric/scripts/fabric-samples/asset-transfer-basic/chaincode-go"}}{\fldrslt \cf4 \ul \ulc4 github.com/hyperledger-fabric/scripts/fabric-samples/asset-transfer-basic/chaincode-go}}\'a0 --lang golang --label basic_1.0
+\f1\fs24 \
+
+\f3\fs28 peer lifecycle chaincode package basic.tar.gz --path
+\f1\fs24  
+\f3\fs28 /opt/goWork/src/{\field{\*\fldinst{HYPERLINK "http://github.com/hyperledger-fabric/scripts/fabric-samples/test-network"}}{\fldrslt \cf4 \ul \ulc4 github.com/hyperledger-fabric/scripts/fabric-samples/test-network}}/billendorse\'a0--lang golang --label basic_1.0
+\f1\fs24  \
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf2 peer lifecycle chaincode package basic.tar.gz --path
+\f1\fs24  
+\f3\fs22 /opt/goWork/src/{\field{\*\fldinst{HYPERLINK "http://github.com/hyperledger-fabric/scripts/fabric-samples/chaincode-fish/zs"}}{\fldrslt \cf4 \ul \ulc4 github.com/hyperledger-fabric/scripts/fabric-samples/chaincode-fish/zs}}
+\fs28 \'a0--lang golang --label basic_1.0
+\f1\fs24  \
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf2 peer lifecycle chaincode install basic.tar.gz
+\f1\fs24 \
+
+\f3\fs28 peer lifecycle chaincode queryinstalled
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf2 peer lifecycle chaincode approveformyorg -o localhost:7050 --ordererTLSHostnameOverride
+\f1  {\field{\*\fldinst{HYPERLINK "http://orderer.example.com/"}}{\fldrslt 
+\f3 \ul orderer.example.com}} 
+\f3 --tls --cafile /opt/goWork/src/{\field{\*\fldinst{HYPERLINK "http://github.com/hyperledger-fabric/scripts/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer"}}{\fldrslt \cf4 \ul \ulc4 github.com/hyperledger-fabric/scripts/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer}}.{\field{\*\fldinst{HYPERLINK "http://example.com/msp/tlscacerts/tlsca.example.com-cert.pem"}}{\fldrslt \ul example.com/msp/tlscacerts/tlsca.example.com-cert.pem}}
+\f1  
+\f3 --channelID mychannel --name basic --version 1.0 --package-id basic_1.0:4ec191e793b27e953ff2ede5a8bcc63152cecb1e4c3f301a26e22692c61967ad --sequence 1
+\f1\fs24 \
+\
+
+\f3\fs28 peer lifecycle chaincode checkcommitreadiness --channelID mychannel --name basic --version 1.0 --sequence 1 --output json
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf2 peer lifecycle chaincode commit -o localhost:7050 --ordererTLSHostnameOverride
+\f1  {\field{\*\fldinst{HYPERLINK "http://orderer.example.com/"}}{\fldrslt 
+\f3 \ul orderer.example.com}} 
+\f3 --tls --cafile /opt/goWork/src/{\field{\*\fldinst{HYPERLINK "http://github.com/hyperledger-fabric/scripts/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer"}}{\fldrslt \cf4 \ul \ulc4 github.com/hyperledger-fabric/scripts/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer}}.{\field{\*\fldinst{HYPERLINK "http://example.com/msp/tlscacerts/tlsca.example.com-cert.pem"}}{\fldrslt \ul example.com/msp/tlscacerts/tlsca.example.com-cert.pem}}
+\f1  
+\f3 --channelID mychannel --name basic --peerAddresses localhost:7051 --tlsRootCertFiles /opt/goWork/src/{\field{\*\fldinst{HYPERLINK "http://github.com/hyperledger-fabric/scripts/fabric-samples/test-network/organizations/peerOrganizations/org1"}}{\fldrslt \cf4 \ul \ulc4 github.com/hyperledger-fabric/scripts/fabric-samples/test-network/organizations/peerOrganizations/org1}}.{\field{\*\fldinst{HYPERLINK "http://example.com/peers/peer0.org1.example.com/tls/ca.crt"}}{\fldrslt \ul example.com/peers/peer0.org1.example.com/tls/ca.crt}}
+\f1  
+\f3 --peerAddresses localhost:9051 --tlsRootCertFiles /opt/goWork/src/{\field{\*\fldinst{HYPERLINK "http://github.com/hyperledger-fabric/scripts/fabric-samples/test-network/organizations/peerOrganizations/org2"}}{\fldrslt \cf4 \ul \ulc4 github.com/hyperledger-fabric/scripts/fabric-samples/test-network/organizations/peerOrganizations/org2}}.{\field{\*\fldinst{HYPERLINK "http://example.com/peers/peer0.org2.example.com/tls/ca.crt"}}{\fldrslt \ul example.com/peers/peer0.org2.example.com/tls/ca.crt}}
+\f1  
+\f3 --version 1.0 --sequence 1
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf2 peer lifecycle chaincode querycommitted --channelID mychannel --name basic
+\f1\fs24 \
+\
+\
+\
+}
