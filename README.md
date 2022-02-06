@@ -10,6 +10,5 @@ Front-end: Used Vue and Element-UI(13 web pages).
 Data: Use Blockchain network to store information(26 smart contracts).   
       
 For main codes, please see the **SourceCodes** folder.  
-https://github.com/ShuaiZhao418/GraduationProject_Bills_Management_System/tree/master/MainCodes
-
+https://github.com/ShuaiZhao418/GraduationProject_Bill_Management_System/tree/main/SourceCodes
 
